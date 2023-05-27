@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #1D191C;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  padding: 4.8rem 4.8rem 0 4.8rem;;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #1d191c; */
+  backdrop-filter: blur(10px);
+
+  position: fixed;
+  width: 100%;
+  height: 20%;
+}
+
+button {
+  background-color: transparent;
+  padding: 1.6rem 2.4rem;
+  color: #FECDD3;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 125%;
+
+  border: 1px solid #FB7185;
+  border-radius: .8rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+button:hover {
+  background-color: #FDA4AF;
+  color:#E11D48;
+  border: #FDA4AF;
+
+  cursor: pointer;
+}
+
+#form-habits {
+  display: flex;
+  padding: 18.2rem 4.8rem 4.8rem;
+  width: fit-content;
+}
+
+.habits {
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+  margin-top: 6.4rem;
+  position: sticky;
+  left: 0;
+  backdrop-filter: blur(1.5px);
+}
+
+.habit {
+  width: 6.4rem;
+  height: 6.4rem;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  margin-left: 1.5rem;
+  gap:4.8rem;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 2.9rem;
+}
+
+.day div {
+  font-family: 'Roboto Mono';
+  color: #FECDD3;
+  font-size: 1.8rem;
+  line-height: 125%;
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 4.5rem;
+  height: 4.5rem;
+  align-self: center;
+
+  background:#2B232A;
+  border: 2px solid #FDA4AF;
+  border-radius: .8rem;
+}
+
+input:hover {
+  background-color: #FECDD3;
+  cursor: pointer;
+}
+
+input:checked {
+  background: #E11D48;
+  border: 2px solid #FDA4AF;
+}
+
+@media (max-width:570px) {
+  button div{
+    display: none;
+  }
+}
